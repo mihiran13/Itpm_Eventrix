@@ -1,0 +1,162 @@
+.social-feed-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+/* Feed Header */
+.feed-header {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+  padding: 2rem 0;
+  color: #fff;
+}
+.feed-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.feed-title-icon { font-size: 1.5rem; }
+.feed-header p {
+  opacity: 0.85;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+.feed-stats { display: flex; gap: 1rem; }
+.feed-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  backdrop-filter: blur(4px);
+}
+
+/* Faculty Tabs */
+.faculty-tabs-wrapper {
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 64px;
+  z-index: 40;
+}
+.faculty-tabs {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.faculty-tabs::-webkit-scrollbar { display: none; }
+.faculty-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  border: 2px solid #e2e8f0;
+  background: #fff;
+  color: #475569;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.faculty-tab:hover {
+  border-color: #6366f1;
+  color: #6366f1;
+  background: #eef2ff;
+}
+.faculty-tab.active {
+  background: #6366f1;
+  color: #fff;
+  border-color: #6366f1;
+}
+.faculty-emoji { font-size: 1.1rem; }
+
+/* Category Chips */
+.category-chips-wrapper {
+  background: #fff;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 0.25rem;
+}
+.category-chips {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.category-chips::-webkit-scrollbar { display: none; }
+.category-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 1.5rem;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 0.8rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.category-chip:hover {
+  border-color: #a78bfa;
+  color: #7c3aed;
+  background: #f5f3ff;
+}
+.category-chip.active {
+  background: #7c3aed;
+  color: #fff;
+  border-color: #7c3aed;
+}
+
+/* Feed Grid */
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem 0 3rem;
+}
+
+/* Empty State */
+.feed-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #94a3b8;
+}
+.feed-empty h3 {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #475569;
+}
+.feed-empty p { margin-top: 0.5rem; }
+
+/* Pagination */
+.feed-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 3rem;
+}
+.page-info {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .feed-header-content { flex-direction: column; gap: 1rem; text-align: center; }
+  .feed-grid { grid-template-columns: 1fr; }
+  .feed-header h1 { font-size: 1.4rem; }
+}

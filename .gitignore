@@ -1,0 +1,53 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm
+
+# Building
+/backend/dist
+/backend/build
+/frontend/dist
+/frontend/build
+/frontend/out
+/.next/
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+backend/.env
+frontend/.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.pdf
+*.png
+walkthrough qr system
+gap_analysis.md.resolved
+features_crud_userflow.md.resolved
+implementation_plan.md.resolved
+NEW_GAP_ANALYSIS_AND_GRADING.md
+ROLE_SELECTION_GUIDE.md
+IMPLEMENTATION_SUMMARY.md
+verification_report.md
+Project Requirements.md
+.github/
+.git_backup/
+simulate_git.ps1
+generate_history.ps1
+SUBMISSION_MANIFEST.md
