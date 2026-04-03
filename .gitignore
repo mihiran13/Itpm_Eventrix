@@ -46,7 +46,7 @@ ROLE_SELECTION_GUIDE.md
 IMPLEMENTATION_SUMMARY.md
 verification_report.md
 Project Requirements.md
-.github/
+# (Restored .github for automation)
 .git_backup/
 simulate_git.ps1
 generate_history.ps1
